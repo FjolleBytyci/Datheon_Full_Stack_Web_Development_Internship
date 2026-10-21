@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fjollë Bytyçi — Computer Science graduate and junior developer portfolio." />
+  <title>Fjollë Bytyçi | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Fjollë Bytyçi home">
+        <span class="brand-mark">❅</span>
+        <span>Fjollë<span class="accent"></span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container">
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Available for opportunities</div>
+        <h1>Building useful ideas with <span class="gradient-text">code.</span></h1>
+        <p class="hero-description">
+          Hi, I'm <strong>Fjollë Bytyçi</strong>, a Computer Science graduate from the University of Prishtina.
+          I enjoy turning ideas into clean, responsive and practical digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View My Projects <span>↗</span></a>
+          <a class="btn btn-secondary" href="#contact">Let's Connect</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Kosovo</span>
+          <span>•</span>
+          <span>Computer Science</span>
+          <span>•</span>
+          <span>Junior Developer</span>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>developer.js</span>
+          </div>
+          <pre><code><span class="code-purple">const</span> developer = {
+  <span class="code-key">name</span>: <span class="code-string">"Fjollë Bytyçi"</span>,
+  <span class="code-key">degree</span>: <span class="code-string">"Computer Science"</span>,
+  <span class="code-key">skills</span>: [
+    <span class="code-string">"Java"</span>,
+    <span class="code-string">"Python"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"Web Development"</span>
+  ],
+  <span class="code-key">mindset</span>: <span class="code-string">"Always learning"</span>
+};</code></pre>
+        </div>
+        <div class="floating-chip chip-one">HTML</div>
+        <div class="floating-chip chip-two">JS</div>
+        <div class="floating-chip chip-three">Java</div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">01 — About Me</span>
+          <h2>Curious mind. <span class="gradient-text">Practical builder.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="lead">
+              I graduated with a Bachelor's degree in Computer Science from the
+              <strong>University of Prishtina – Faculty of Mathematical and Natural Sciences (FSHMN)</strong>.
+            </p>
+            <p>
+              My background combines programming fundamentals with hands-on web development.
+              I like learning by building, solving problems step by step, and exploring new technologies
+              when they can make a project better.
+            </p>
+            <p>
+              I'm especially interested in software development, modern web technologies and AI.
+              My goal is to keep growing as a developer while creating applications that are useful,
+              intuitive and reliable.
+            </p>
+            <div class="credential-row">
+              <div class="credential">
+                <strong>BSc</strong>
+                <span>Computer Science</span>
+              </div>
+              <div class="credential">
+                <strong>FSHMN</strong>
+                <span>University of Prishtina</span>
+              </div>
+              <div class="credential">
+                <strong>2026</strong>
+                <span>Graduate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-panel reveal">
+            <div class="panel-icon">✦</div>
+            <h3>What I bring</h3>
+            <ul class="check-list">
+              <li>Strong programming fundamentals</li>
+              <li>Responsive web development</li>
+              <li>Problem-solving mindset</li>
+              <li>Fast learning and curiosity</li>
+              <li>Teamwork and communication</li>
+              <li>Interest in AI & emerging technology</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">02 — Skills</span>
+          <h2>Tools I use to turn <span class="gradient-text">ideas into reality.</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">⌘</div>
+            <h3>Programming</h3>
+            <p>Object-oriented programming, algorithms and problem solving.</p>
+            <div class="tags"><span>Java</span><span>Python</span><span>JavaScript</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">◈</div>
+            <h3>Web Development</h3>
+            <p>Building responsive interfaces with semantic and accessible markup.</p>
+            <div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">▦</div>
+            <h3>Database & Tools</h3>
+            <p>Working with data, version control and developer workflows.</p>
+            <div class="tags"><span>MySQL</span><span>Git</span><span>GitHub</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon">✧</div>
+            <h3>AI & Learning</h3>
+            <p>Exploring AI concepts, prompt engineering and new technologies.</p>
+            <div class="tags"><span>AI</span><span>APIs</span><span>Prompting</span></div>
+          </article>
+        </div>
+
+        <div class="tech-strip reveal">
+          <span>TECH STACK</span>
+          <div class="tech-list">
+            <b>Java</b><i>•</i><b>Python</b><i>•</i><b>HTML</b><i>•</i><b>CSS</b><i>•</i><b>JavaScript</b><i>•</i><b>MySQL</b><i>•</i><b>Git</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading projects-heading reveal">
+          <div>
+            <span class="section-label">03 — Featured Projects</span>
+            <h2>Selected work & <span class="gradient-text">projects.</span></h2>
+          </div>
+          <span class="project-count">05 PROJECTS</span>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-visual visual-blood">
+              <span class="visual-label">HEALTH • WEB APP</span>
+              <div class="mock-ui">
+                <div class="mock-top"></div>
+                <div class="blood-drop">+</div>
+                <div class="mock-lines"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top"><span>01</span><span>Web Development</span></div>
+              <h3>BloodBridge</h3>
+              <p>A blood donor finder concept connecting urgent requests with compatible nearby donors using location and urgency.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <button class="text-btn project-btn" data-project="bloodbridge">View case study <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-golden">
+              <span class="visual-label">E-COMMERCE • MVP</span>
+              <div class="mock-shop">
+                <span class="shop-logo">Golden Glow</span>
+                <div class="product-shapes"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top"><span>02</span><span>Frontend / MVP</span></div>
+              <h3>Golden Glow</h3>
+              <p>A modern beauty-store interface with product details, authentication flow and an online shopping experience.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MockAPI</span></div>
+              <button class="text-btn project-btn" data-project="goldenglow">View case study <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-verba">
+              <span class="visual-label">EDTECH • PLATFORM</span>
+              <div class="mock-language">
+                <div class="language-orb">A</div>
+                <div><b>VerbaFlow</b><small>Learn. Practice. Improve.</small></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top"><span>03</span><span>Course Project</span></div>
+              <h3>VerbaFlow</h3>
+              <p>A language-learning platform concept with levels, vocabulary, grammar, speaking practice and personalized learning.</p>
+              <div class="tags"><span>UI/UX</span><span>Web</span><span>Speech</span></div>
+              <button class="text-btn project-btn" data-project="verbaflow">View case study <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-travel">
+              <span class="visual-label">TRAVEL • TICKETS</span>
+              <div class="mock-travel">
+                <span class="travel-plane">↗</span>
+                <div><b>Touch the Word</b><small>Travel • Discover • Go</small></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top"><span>04</span><span>Course Project</span></div>
+              <h3>Touch the Word</h3>
+              <p>A travel-focused project featuring travel information and ticket-related functionality.</p>
+              <div class="tags"><span>Travel</span><span>Tickets</span></div>
+              <button class="text-btn project-btn" data-project="touchtheword">View case study <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-library">
+              <span class="visual-label">MOBILE • KOTLIN</span>
+              <div class="mock-library">
+                <span class="book-stack">▤</span>
+                <div><b>OnlineLibrary</b><small>Your library, on mobile</small></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-top"><span>05</span><span>Mobile Application</span></div>
+              <h3>OnlineLibrary</h3>
+              <p>A Kotlin-based online library application. This project is not currently published on GitHub.</p>
+              <div class="tags"><span>Kotlin</span><span>Android</span></div>
+              <button class="text-btn project-btn" data-project="onlinelibrary">View case study <span>↗</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">04 — How I Work</span>
+          <h2>From idea to <span class="gradient-text">working solution.</span></h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal"><span>01</span><h3>Understand</h3><p>Break the requirement into clear goals and smaller tasks.</p></div>
+          <div class="process-step reveal"><span>02</span><h3>Build</h3><p>Develop the solution with clean structure and responsive design.</p></div>
+          <div class="process-step reveal"><span>03</span><h3>Test</h3><p>Check functionality, usability and different screen sizes.</p></div>
+          <div class="process-step reveal"><span>04</span><h3>Improve</h3><p>Learn from feedback and continuously refine the result.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <span class="section-label">05 — Contact</span>
+            <h2>Let's build something <span class="gradient-text">great.</span></h2>
+            <p>I'm open to junior developer roles, internships and opportunities where I can learn, contribute and grow.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:fjolle.bytyci@gmail.com">Email Me ↗</a>
+            <a class="social-link" href="https://github.com/FjolleBytyci" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+            <a class="social-link" href="https://www.linkedin.com/in/fjollë-bytyçi-a51b76379?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year"></span> Fjollë Bytyçi</span>
+    <span>Designed & built with HTML, CSS & JavaScript.</span>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+      <span class="section-label" id="modalLabel"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-details">
+        <div><strong>Role</strong><span id="modalRole"></span></div>
+        <div><strong>Focus</strong><span id="modalFocus"></span></div>
+        <div><strong>Technologies</strong><span id="modalTech"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
