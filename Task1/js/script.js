@@ -4,6 +4,7 @@ const navLinks = document.getElementById("navLinks");
 const themeToggle = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
 const year = document.getElementById("year");
+const printResume = document.getElementById("printResume");
 
 year.textContent = new Date().getFullYear();
 
@@ -30,6 +31,15 @@ themeToggle.addEventListener("click", () => {
   const isDark = body.classList.contains("dark");
   themeIcon.textContent = isDark ? "☀" : "☾";
   localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+});
+
+printResume.addEventListener("click", () => {
+  body.classList.add("print-resume");
+  window.print();
+});
+
+window.addEventListener("afterprint", () => {
+  body.classList.remove("print-resume");
 });
 
 const projects = {
