@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f2">
+  <title>Forma — Everyday Objects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A little something extra — <strong>free shipping on orders over $75</strong><span>✦</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Forma home">forma<span>®</span></a>
+    <nav class="main-nav" aria-label="Product categories">
+      <button class="nav-link active" data-category="all">Shop all</button>
+      <button class="nav-link" data-category="electronics">Tech & electronics</button>
+      <button class="nav-link" data-category="jewelery">Jewelry</button>
+      <button class="nav-link" data-category="clothing">Clothing</button>
+    </nav>
+    <div class="header-actions">
+      <button class="header-icon" id="search-toggle" aria-label="Search products" title="Search">⌕</button>
+      <button class="cart-trigger" id="open-cart"><span class="bag-icon">♧</span><span>Bag</span><span class="cart-count" id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-kicker"><span class="sparkle">✳</span> THOUGHTFULLY CHOSEN, MADE FOR EVERY DAY</div>
+        <h1>Good design.<br><em>Better living.</em></h1>
+        <p>Considered essentials for the way you live, work, and move through the world.</p>
+        <button class="hero-button" id="shop-now">Explore the collection <span>↘</span></button>
+        <div class="hero-note"><span class="note-line"></span> A FEW GOOD THINGS, ALL IN ONE PLACE</div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract product composition">
+        <div class="art-sun"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card card-back"><span>FORMA</span><i>OBJECTS FOR LIVING</i></div>
+        <div class="art-product"><div class="product-speaker"><div class="speaker-top"></div><div class="speaker-grill"></div><div class="speaker-light"></div></div><div class="product-cup"><div class="cup-handle"></div><div class="cup-rim"></div></div></div>
+        <div class="art-sticker">DESIGNED<br>TO LAST <span>↗</span></div>
+        <div class="art-bottom-label">OBJECT NO. 01 <span>—</span> THE EVERYDAY EDIT</div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-top">
+        <div><div class="section-kicker">THE COLLECTION / 01</div><h2>Things worth keeping<span>.</span></h2><p class="section-description">Useful, beautiful, and a little bit unexpected.</p></div>
+        <div class="collection-meta"><span class="live-dot"></span><span id="product-count">Loading collection…</span></div>
+      </div>
+      <div class="shop-tools">
+        <div class="category-tabs" role="group" aria-label="Filter by category">
+          <button class="category-tab active" data-category="all">All pieces <span id="count-all">0</span></button>
+          <button class="category-tab" data-category="electronics">Electronics <span id="count-electronics">0</span></button>
+          <button class="category-tab" data-category="jewelery">Jewelry <span id="count-jewelery">0</span></button>
+          <button class="category-tab" data-category="clothing">Clothing <span id="count-clothing">0</span></button>
+        </div>
+        <div class="tool-right">
+          <label class="search-field" id="search-field"><span>⌕</span><input id="search-input" type="search" placeholder="Find something…" aria-label="Search products"></label>
+          <select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="rating">Top rated</option></select>
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <div class="loading-state"><span class="loader"></span><p>Finding your next favorite thing…</p></div>
+      </div>
+      <div class="error-state" id="error-state" hidden><div class="error-symbol">↻</div><h3>We couldn’t load the collection</h3><p>Check your internet connection and try again.</p><button class="outline-button" id="retry-load">Try again</button></div>
+      <div class="collection-footer"><span>Made for the everyday, not just the shelf.</span><span>01 — 04 <span class="footer-star">✳</span></span></div>
+    </section>
+    <section class="bottom-banner"><span class="banner-spark">✳</span><div><div class="section-kicker">THE FORMA PROMISE</div><h2>Less, but <em>lovelier.</em></h2><p>Pieces picked with intention. A little joy in the everyday.</p></div><div class="banner-side">GOOD THINGS<br>TAKE SHAPE HERE <span>↗</span></div></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#">forma<span>®</span></a><span>Considered essentials for everyday living.</span><span>© 2026 FORMA STUDIO</span></footer>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header"><div><div class="section-kicker">YOUR SELECTION</div><h2>Your bag <span id="drawer-item-count">(0)</span></h2></div><button class="close-drawer" id="close-cart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><div class="empty-bag">♧</div><h3>A little space for something good.</h3><p>Your bag is waiting for its first find.</p><button class="outline-button" id="continue-shopping">Explore the collection</button></div>
+    <div class="cart-summary" id="cart-summary">
+      <div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+      <div class="summary-line"><span>Shipping</span><strong id="cart-shipping">$0.00</strong></div>
+      <div class="summary-line"><span>Estimated tax (8%)</span><strong id="cart-tax">$0.00</strong></div>
+      <div class="summary-total"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+      <p class="shipping-note" id="shipping-note">You’re $75.00 away from free shipping.</p>
+      <button class="checkout-button" id="checkout-button">Continue to checkout <span>→</span></button>
+      <div class="secure-note">⌑ Secure checkout · Demo store</div>
+    </div>
+  </aside>
+
+  <div class="modal-overlay" id="checkout-overlay">
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="close-drawer checkout-close" id="close-checkout" aria-label="Close checkout">×</button>
+      <div class="checkout-symbol">✳</div><div class="section-kicker">ALMOST YOURS</div><h2 id="checkout-title">Make it official.</h2><p class="checkout-intro">This is a demo checkout. Enter your details to preview an order confirmation — no payment will be taken.</p>
+      <form id="checkout-form">
+        <label for="customer-name">Full name</label><input id="customer-name" required autocomplete="name" placeholder="Your name">
+        <label for="customer-email">Email address</label><input id="customer-email" type="email" required autocomplete="email" placeholder="you@example.com">
+        <label for="customer-address">Delivery address</label><input id="customer-address" required autocomplete="street-address" placeholder="Street and number">
+        <div class="checkout-totals"><span>Order total</span><strong id="checkout-total">$0.00</strong></div>
+        <button class="checkout-button" type="submit">Place demo order <span>→</span></button>
+      </form>
+    </section>
+  </div>
+  <div class="confirmation-overlay" id="confirmation-overlay"><section class="confirmation-card"><div class="confirmation-check">✓</div><div class="section-kicker">ORDER CONFIRMED</div><h2>Good choice.</h2><p id="confirmation-message">Your demo order is ready.</p><div class="order-number" id="order-number"></div><button class="checkout-button" id="finish-order">Back to shopping <span>→</span></button></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✓</span><p id="toast-message">Added to bag</p></div>
+  <script src="script.js"></script>
+</body>
+</html>
